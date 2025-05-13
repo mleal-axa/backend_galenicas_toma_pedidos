@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Iksaku\Laravel\MassUpdate\MassUpdatable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Ubicacion extends Model
+{
+    use HasFactory, MassUpdatable;
+
+    protected $fillable = [
+        'netsuite_id',
+        'nombre',
+        'ciudad',
+        'departamento',
+        'agrupador',
+        'isinactive'
+    ];
+}
